@@ -1,8 +1,10 @@
 # Release notes
 
-## Bản bàn giao đang chuẩn bị — 20/11/2026
+## a3-handoff-v1.0.0 — 21/11/2026
 
-Chưa tạo release hoặc tag Git. Gói bàn giao đang dựa trên nhánh `main`; commit mã nguồn trước khi thêm tài liệu là `1adc4ab5ff7c821812b8b25c235b491d854a137b`. Cập nhật SHA sau khi commit tài liệu và báo cáo.
+Tag `a3-handoff-v1.0.0` đánh dấu snapshot mã nguồn và tài liệu bàn giao trên nhánh `main`. Đây là phiên bản hồ sơ A3, không đồng nghĩa website đã được triển khai công khai.
+
+Commit mã nguồn trước khi thêm tài liệu là `1adc4ab5ff7c821812b8b25c235b491d854a137b`; README, AI_LOG và release notes được thêm ở commit `24795dcc3ba7fc59f318967516ee5a372588f40b`.
 
 ### Thay đổi
 

@@ -26,9 +26,11 @@ Sau đó mở `http://localhost:8000/index.html`. Không cần cài thư viện 
 - Repository Git: `https://github.com/Hieu492003/baitaplon_Webgioithieuvequehuong`
 - Nhánh được kiểm tra: `main`
 - Commit mã nguồn trước khi thêm bộ tài liệu này: `1adc4ab5ff7c821812b8b25c235b491d854a137b`
+- Commit đã thêm README, AI_LOG và release notes: `24795dcc3ba7fc59f318967516ee5a372588f40b`
+- Tag bàn giao: `a3-handoff-v1.0.0` (đánh dấu phiên bản mã nguồn/tài liệu, không xác nhận website đã triển khai)
 - Trạng thái GitHub Pages: chưa xác minh triển khai. URL dự kiến `https://hieu492003.github.io/baitaplon_Webgioithieuvequehuong/` trả về 404 khi kiểm tra ngày 20/11/2026. Không dùng URL này làm liên kết demo cho đến khi triển khai và kiểm tra lại.
 
-Sau khi commit bộ tài liệu bàn giao, dùng SHA của commit mới nhất trong báo cáo; không coi SHA ở trên là phiên bản của các tài liệu chưa commit.
+Khi tạo bản bàn giao mới, cập nhật SHA commit trong báo cáo và kiểm tra URL triển khai có trỏ đúng phiên bản đó.
 
 ## Giới hạn đã biết
 
