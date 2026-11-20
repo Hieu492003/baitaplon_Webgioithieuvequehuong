@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gửi lời nhắn và góp ý cho trang giới thiệu quê hương Lai Châu."
+    />
+    <meta name="theme-color" content="#173b2b" />
+    <title>Liên hệ — Lai Châu</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="thanh-dieu-huong" id="dau-trang">
+      <nav class="thanh-menu khung-noi-dung" aria-label="Điều hướng chính">
+        <a
+          class="thuong-hieu"
+          href="index.html"
+          aria-label="Lai Châu - trang chủ"
+          ><span class="thuong-hieu-bieu-tuong" aria-hidden="true">⌁</span
+          ><span
+            >LAI CHÂU<span class="thuong-hieu-chu-nho"
+              >Miền đất mây ngàn</span
+            ></span
+          ></a
+        >
+        <button
+          class="nut-menu-di-dong"
+          type="button"
+          aria-label="Mở menu"
+          aria-expanded="false"
+          aria-controls="danh-sach-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="danh-sach-menu" id="danh-sach-menu">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.html#lich-su">Lịch sử</a></li>
+          <li><a href="places.html">Điểm đến</a></li>
+          <li><a href="itinerary.html">Lịch trình</a></li>
+          <li><a href="food.html">Ẩm thực</a></li>
+          <li><a href="culture.html">Văn hóa</a></li>
+          <li><a href="contact.html" aria-current="page">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="anh-bia anh-bia-trang anh-bia-lien-he"
+        aria-labelledby="tieu-de-chinh"
+      >
+        <div class="anh-bia-lop-phu"></div>
+        <div class="anh-bia-noi-dung khung-noi-dung">
+          <p class="nhan-tren">HẸN GẶP BẠN Ở LAI CHÂU</p>
+          <h1 id="tieu-de-chinh">
+            CÙNG LAN TỎA<br /><span>TÌNH YÊU QUÊ HƯƠNG</span>
+          </h1>
+          <p class="mo-ta-anh-bia">
+            Một lời nhắn của bạn sẽ góp thêm sắc màu cho câu chuyện về Lai Châu.
+          </p>
+          <a class="nut-chinh" href="#gui-loi-nhan"
+            >Gửi lời nhắn <span aria-hidden="true">↘</span></a
+          >
+        </div>
+      </section>
+      <section
+        class="phan-lien-he khoang-cach nen-sang"
+        id="gui-loi-nhan"
+        aria-labelledby="tieu-de-lien-he"
+      >
+        <div class="khung-noi-dung">
+          <div class="tieu-de-phan tieu-de-giua">
+            <p class="nhan-phan">LỜI CHÀO TỪ LAI CHÂU</p>
+            <h2 id="tieu-de-lien-he">Kết nối cùng chúng tôi</h2>
+            <p>
+              Gửi cảm nhận, lời chúc hoặc góp ý để trang giới thiệu quê hương
+              ngày càng hoàn thiện.
+            </p>
+          </div>
+          <div class="lien-he-luoi">
+            <div class="ban-do">
+              <iframe
+                title="Bản đồ vị trí tỉnh Lai Châu"
+                src="https://maps.google.com/maps?q=Lai%20Chau%2C%20Vietnam&t=&z=8&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <form class="form-gop-y" id="bieu-mau-gop-y">
+              <label for="ho-ten">Họ và tên</label
+              ><input
+                id="ho-ten"
+                name="ho-ten"
+                type="text"
+                autocomplete="name"
+                placeholder="Tên của bạn"
+                required
+              />
+              <label for="email">Email</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="ban@example.com"
+                required
+              />
+              <label for="loi-nhan">Lời nhắn</label
+              ><textarea
+                id="loi-nhan"
+                name="loi-nhan"
+                rows="4"
+                placeholder="Chia sẻ cảm nhận của bạn..."
+                required
+              ></textarea>
+              <button class="nut-chinh nut-gui" type="submit">
+                Gửi lời nhắn <span aria-hidden="true">→</span>
+              </button>
+              <p
+                class="thong-bao-form"
+                id="thong-bao-form"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+          <p class="ghi-chu-bieu-mau">
+            Lưu ý: Biểu mẫu phục vụ bài tập minh họa, chưa kết nối hệ thống lưu
+            hoặc gửi thông tin.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="chan-trang">
+      <div class="khung-noi-dung chan-trang-tren">
+        <a class="thuong-hieu thuong-hieu-chan" href="index.html"
+          ><span class="thuong-hieu-bieu-tuong" aria-hidden="true">⌁</span
+          ><span
+            >LAI CHÂU<span class="thuong-hieu-chu-nho"
+              >Miền đất mây ngàn</span
+            ></span
+          ></a
+        >
+        <p>Thương nhớ một miền Tây Bắc.</p>
+        <a class="lien-ket-len-dau" href="#dau-trang">Lên đầu trang ↑</a>
+      </div>
+      <div class="chan-trang-duoi">
+        <div class="khung-noi-dung chan-trang-duoi-noi-dung">
+          <span>Bài tập lớn kết thúc học phần · Học kỳ I</span
+          ><span>Sinh viên thực hiện: Khoàng Trung Hiếu · Năm nhất</span
+          ><span>© <span id="nam-hien-tai"></span> · Tự hào quê hương</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,873 @@
+/* Cài đặt chung cho tất cả các trang */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: #333;
+    background-color: #fff;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+.khung-noi-dung {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.khoang-cach {
+    padding: 65px 0;
+}
+
+.nen-sang {
+    background-color: #f3f5f2;
+}
+
+/* Đầu trang và menu điều hướng */
+.thanh-dieu-huong {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    color: #fff;
+    background-color: #173b2b;
+}
+
+.thanh-menu {
+    display: flex;
+    min-height: 72px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.thuong-hieu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.thuong-hieu-bieu-tuong {
+    color: #e7afbd;
+    font-size: 34px;
+}
+
+.thuong-hieu-chu-nho {
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.danh-sach-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.danh-sach-menu a {
+    display: block;
+    padding: 8px 0;
+    font-size: 13px;
+}
+
+.danh-sach-menu a:hover,
+.danh-sach-menu a[aria-current="page"] {
+    color: #f0c4d2;
+}
+
+/* Ẩn nút menu vì các liên kết luôn hiển thị */
+.nut-menu-di-dong {
+    display: none;
+}
+
+/* Ảnh bìa và nút liên kết */
+.anh-bia {
+    position: relative;
+    display: flex;
+    min-height: 570px;
+    align-items: center;
+    overflow: hidden;
+    color: #fff;
+    background-color: #344a37;
+    background-image: url("../assets/hinhnen1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.anh-bia-lop-phu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(15, 35, 25, 0.55);
+}
+
+.anh-bia-noi-dung {
+    position: relative;
+    z-index: 1;
+    padding: 50px 0;
+}
+
+.nhan-tren,
+.nhan-phan {
+    margin: 0 0 12px;
+    color: #c85a82;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.anh-bia .nhan-tren {
+    color: #f0c4d2;
+}
+
+.anh-bia h1 {
+    max-width: 750px;
+    margin: 0;
+    font-size: 56px;
+    line-height: 1.15;
+}
+
+.anh-bia h1 span {
+    font-size: 0.65em;
+}
+
+.mo-ta-anh-bia {
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+.nut-chinh {
+    display: inline-block;
+    border: 1px solid #c85a82;
+    padding: 12px 20px;
+    color: #fff;
+    background-color: #c85a82;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nut-chinh:hover {
+    background-color: #a9466b;
+}
+
+.nut-chinh span {
+    margin-left: 8px;
+}
+
+.cuon-xuong,
+.anh-bia-chu-thich {
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    font-size: 11px;
+}
+
+.cuon-xuong {
+    left: 5%;
+}
+
+.anh-bia-chu-thich {
+    right: 5%;
+}
+
+/* Tiêu đề các phần nội dung */
+.tieu-de-phan {
+    max-width: 700px;
+    margin-bottom: 32px;
+}
+
+.tieu-de-phan h2,
+.gioi-thieu-noi-dung h2 {
+    margin: 0;
+    color: #1e3f20;
+    font-size: 38px;
+    line-height: 1.25;
+}
+
+.tieu-de-phan > p:last-child {
+    color: #666;
+}
+
+.tieu-de-giua {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+/* Phần giới thiệu trang chủ */
+.gioi-thieu-luoi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.gioi-thieu-noi-dung h2 em {
+    color: #c85a82;
+}
+
+.gioi-thieu-noi-dung > p:not(.nhan-phan) {
+    color: #666;
+}
+
+.lien-ket-chu {
+    display: inline-block;
+    margin-top: 12px;
+    color: #1e3f20;
+    font-weight: bold;
+}
+
+.lien-ket-chu span {
+    color: #c85a82;
+}
+
+.gioi-thieu-anh {
+    position: relative;
+}
+
+.gioi-thieu-anh img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.ghi-chu-anh {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 12px 16px;
+    color: #fff;
+    background-color: #1e3f20;
+}
+
+.ghi-chu-anh span {
+    display: block;
+    color: #f0c4d2;
+    font-size: 11px;
+}
+
+.dau-trang-tri {
+    display: none;
+}
+
+/* Các mốc lịch sử */
+.dong-thoi-gian {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.moc-thoi-gian {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.moc-thoi-gian.moc-le {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.moc-anh {
+    position: relative;
+    flex: 0 0 120px;
+}
+
+.moc-anh img {
+    width: 120px;
+    height: 110px;
+    object-fit: cover;
+}
+
+.moc-so {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 2px 8px;
+    color: #fff;
+    background-color: #c85a82;
+}
+
+.moc-nhan {
+    color: #b7652e;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.moc-noi-dung h3,
+.the-van-hoa h3 {
+    margin: 6px 0;
+    color: #1e3f20;
+}
+
+.moc-noi-dung p,
+.the-van-hoa p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+}
+
+/* Các thẻ địa điểm tham quan */
+.luoi-diem-den {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 230px;
+    gap: 16px;
+}
+
+.the-diem-den {
+    position: relative;
+    min-height: 230px;
+    overflow: hidden;
+    color: #fff;
+    background-color: #566a52;
+}
+
+.the-diem-den-lon {
+    grid-row: span 2;
+}
+
+.the-diem-den img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.the-lop-chu {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 16px;
+    background-color: rgba(15, 35, 25, 0.78);
+}
+
+.the-lop-chu > span {
+    color: #f0c4d2;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.the-lop-chu h3 {
+    margin: 4px 0;
+    font-size: 22px;
+}
+
+.the-lop-chu p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.the-so {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    padding: 2px 7px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Các món ăn đặc sản */
+.mon-an-danh-sach {
+    display: grid;
+    gap: 32px;
+}
+
+.mon-an {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.mon-an-dao .mon-an-minh-hoa {
+    order: 2;
+}
+
+.mon-an-dao .mon-an-thong-tin {
+    order: 1;
+}
+
+.mon-an-minh-hoa {
+    height: 250px;
+    overflow: hidden;
+    background-color: #e9eee7;
+}
+
+.mon-an-minh-hoa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mon-an-thong-tin h3 {
+    margin: 0;
+    color: #1e3f20;
+    font-size: 30px;
+}
+
+.mon-an-thong-tin > p:not(.nhan-phan) {
+    color: #666;
+}
+
+.mon-an-tu-khoa {
+    color: #c85a82;
+    font-size: 13px;
+}
+
+/* Phần văn hóa */
+.van-hoa-bo-cuc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.van-hoa-anh {
+    position: relative;
+    min-height: 450px;
+}
+
+.van-hoa-anh img {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    object-fit: cover;
+}
+
+.van-hoa-anh-chu {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+    color: #fff;
+    background-color: rgba(15, 35, 25, 0.7);
+    font-size: 12px;
+}
+
+.van-hoa-danh-sach {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.the-van-hoa {
+    display: flex;
+    gap: 16px;
+    border-bottom: 1px solid #ddd;
+    padding: 14px 0;
+}
+
+.the-van-hoa:last-child {
+    border-bottom: 0;
+}
+
+.van-hoa-bieu-tuong {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2cbd2;
+    border-radius: 50%;
+    color: #c85a82;
+}
+
+/* Liên hệ và biểu mẫu */
+.lien-he-luoi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.ban-do,
+.ban-do iframe {
+    width: 100%;
+    min-height: 380px;
+}
+
+.ban-do iframe {
+    border: 0;
+}
+
+.form-gop-y {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-gop-y label {
+    margin-bottom: 5px;
+    color: #1e3f20;
+    font-weight: bold;
+}
+
+.form-gop-y input,
+.form-gop-y textarea {
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.form-gop-y textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.nut-gui {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.thong-bao-form {
+    min-height: 22px;
+    color: #1e3f20;
+}
+
+.ghi-chu-bieu-mau {
+    color: #666;
+    font-size: 13px;
+}
+
+/* Lời mời và chân trang */
+.loi-moi-kham-pha {
+    padding: 55px 0;
+    color: #fff;
+    background-color: #1e3f20;
+    background-image: url("../assets/hinhnen1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.loi-moi-noi-dung {
+    padding: 24px;
+    background-color: rgba(23, 59, 43, 0.8);
+}
+
+.loi-moi-noi-dung .nhan-tren {
+    color: #f0c4d2;
+}
+
+.loi-moi-noi-dung h2 {
+    margin: 0 0 20px;
+    font-size: 34px;
+}
+
+.nut-chinh-sang {
+    border-color: #fff;
+    color: #1e3f20;
+    background-color: #fff;
+}
+
+.nut-chinh-sang:hover {
+    background-color: #f0c4d2;
+}
+
+.chan-trang {
+    color: #fff;
+    background-color: #173b2b;
+}
+
+.chan-trang-tren {
+    display: flex;
+    min-height: 110px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.chan-trang-tren > p {
+    font-style: italic;
+}
+
+.lien-ket-len-dau {
+    font-size: 13px;
+}
+
+.chan-trang-duoi {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.chan-trang-duoi-noi-dung {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 0;
+    font-size: 11px;
+}
+
+/* Lịch trình và các thẻ khám phá */
+.lich-trinh-luoi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.ngay-hanh-trinh {
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.ngay-hanh-trinh-dau {
+    padding: 18px;
+    color: #fff;
+    background-color: #1e3f20;
+}
+
+.ngay-hanh-trinh-dau > span {
+    color: #f0c4d2;
+    font-size: 11px;
+}
+
+.ngay-hanh-trinh-dau h3 {
+    margin: 4px 0 0;
+}
+
+.cac-hoat-dong {
+    margin: 0;
+    padding: 10px 20px;
+    list-style: none;
+}
+
+.cac-hoat-dong li {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 12px;
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+}
+
+.cac-hoat-dong li:last-child {
+    border-bottom: 0;
+}
+
+.cac-hoat-dong time {
+    color: #b7652e;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cac-hoat-dong h4 {
+    margin: 0;
+    color: #1e3f20;
+}
+
+.cac-hoat-dong p,
+.luu-y-hanh-trinh {
+    color: #666;
+    font-size: 13px;
+}
+
+.kham-pha-luoi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.the-kham-pha {
+    min-height: 210px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.kham-pha-bieu-tuong {
+    color: #c85a82;
+    font-size: 24px;
+}
+
+.the-kham-pha h3 {
+    color: #1e3f20;
+}
+
+.the-kham-pha p {
+    color: #666;
+    font-size: 13px;
+}
+
+/* Ảnh bìa riêng cho từng trang */
+.anh-bia-trang {
+    min-height: 480px;
+}
+
+.anh-bia-trang.anh-bia-diem-den {
+    background-image: url("../assets/oquyho/oquyho2.webp");
+}
+
+.anh-bia-trang.anh-bia-am-thuc {
+    background-image: url("../assets/sithauchai/sithauchai1.jpg");
+}
+
+.anh-bia-trang.anh-bia-van-hoa {
+    background-image: url("../assets/sithauchai/sithauchai1.jpg");
+}
+
+.anh-bia-trang.anh-bia-lien-he {
+    background-image: url("../assets/caukinhrongmay/caukinhrongmay1.jpg");
+}
+
+.anh-bia-trang.anh-bia-lich-trinh {
+    background-image: url("../assets/sithauchai/sithauchai3.webp");
+}
+
+:focus-visible {
+    outline: 2px solid #c85a82;
+    outline-offset: 3px;
+}
+
+/* Sắp xếp lại nội dung trên màn hình nhỏ */
+@media (max-width: 760px) {
+    .thanh-menu {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding: 12px 0;
+    }
+
+    .danh-sach-menu {
+        gap: 4px 14px;
+    }
+
+    .anh-bia {
+        min-height: 500px;
+    }
+
+    .anh-bia-trang {
+        min-height: 450px;
+    }
+
+    .anh-bia h1 {
+        font-size: 44px;
+    }
+
+    .gioi-thieu-luoi,
+    .van-hoa-bo-cuc,
+    .lien-he-luoi {
+        grid-template-columns: 1fr;
+    }
+
+    .dong-thoi-gian {
+        grid-template-columns: 1fr;
+    }
+
+    .luoi-diem-den {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .the-diem-den-lon {
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+    .mon-an {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .mon-an-dao .mon-an-minh-hoa,
+    .mon-an-dao .mon-an-thong-tin {
+        order: initial;
+    }
+
+    .lich-trinh-luoi,
+    .kham-pha-luoi {
+        grid-template-columns: 1fr;
+    }
+
+    .ban-do,
+    .ban-do iframe {
+        min-height: 300px;
+    }
+
+    .chan-trang-duoi-noi-dung {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .khung-noi-dung {
+        width: 92%;
+    }
+
+    .khoang-cach {
+        padding: 45px 0;
+    }
+
+    .anh-bia {
+        min-height: 460px;
+    }
+
+    .anh-bia h1 {
+        font-size: 36px;
+    }
+
+    .tieu-de-phan h2,
+    .gioi-thieu-noi-dung h2 {
+        font-size: 30px;
+    }
+
+    .gioi-thieu-anh img {
+        height: 270px;
+    }
+
+    .moc-thoi-gian,
+    .moc-thoi-gian.moc-le {
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .luoi-diem-den {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
+    }
+
+    .the-diem-den-lon {
+        grid-column: auto;
+    }
+
+    .van-hoa-anh,
+    .van-hoa-anh img {
+        min-height: 320px;
+    }
+
+    .chan-trang-tren {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        padding: 18px 0;
+    }
+
+    .loi-moi-noi-dung h2 {
+        font-size: 28px;
+    }
+}
