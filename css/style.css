@@ -106,6 +106,13 @@ textarea {
     display: none;
 }
 
+.nut-menu-di-dong span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #fff;
+}
+
 /* Ảnh bìa và nút liên kết */
 .anh-bia {
     position: relative;
@@ -747,14 +754,41 @@ textarea {
 /* Sắp xếp lại nội dung trên màn hình nhỏ */
 @media (max-width: 760px) {
     .thanh-menu {
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 8px 16px;
         padding: 12px 0;
     }
 
+    .nut-menu-di-dong {
+        display: flex;
+        width: 42px;
+        height: 42px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        border-radius: 4px;
+        background: transparent;
+        cursor: pointer;
+    }
+
     .danh-sach-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
         gap: 4px 14px;
+    }
+
+    .danh-sach-menu.danh-sach-menu-mo {
+        display: flex;
+    }
+
+    .danh-sach-menu a {
+        padding: 8px 4px;
     }
 
     .anh-bia {

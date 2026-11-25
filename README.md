@@ -34,9 +34,9 @@ Khi tạo bản bàn giao mới, cập nhật SHA commit trong báo cáo và ki�
 
 ## Giới hạn đã biết
 
-- Các trang có tham chiếu `script.js`, nhưng hiện không có tệp này trong repository. Các tính năng cần JavaScript (nếu có) chưa được xác minh.
-- Biểu mẫu góp ý chỉ để minh họa, không gửi hoặc lưu dữ liệu.
 - Bản đồ Google Maps và các tính năng trực tuyến cần Internet.
+- `script.js` hỗ trợ menu thu gọn trên màn hình nhỏ và cập nhật năm ở chân trang.
+- Biểu mẫu góp ý chỉ xác thực dữ liệu nhập ở trình duyệt rồi thông báo đây là bản minh họa; không gửi hoặc lưu thông tin.
 - Chưa có bộ kiểm thử tự động.
 - Nguồn gốc và giấy phép của một số ảnh trong `assets/` chưa được ghi lại. Cần bổ sung nguồn và kiểm tra quyền sử dụng trước khi nộp.
 
